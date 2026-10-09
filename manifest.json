@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.devalexwhite.hey-time-tracker",
+  "name": "HEY Time Tracker",
+  "version": "1.1.0",
+  "description": "Track time in HEY and review it from the bar.",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "HEY Time Tracker",
+    "description": "Start, stop, review and save tracked time to HEY.",
+    "category": "Productivity",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "defaultCategory": "",
+      "defaultNotes": "",
+      "account": ""
+    },
+    "schema": [
+      {
+        "key": "defaultCategory",
+        "type": "string",
+        "label": "Default category",
+        "defaultValue": ""
+      },
+      {
+        "key": "defaultNotes",
+        "type": "string",
+        "label": "Default notes",
+        "defaultValue": ""
+      },
+      {
+        "key": "account",
+        "type": "string",
+        "label": "HEY account ID (blank uses CLI default)",
+        "defaultValue": ""
+      }
+    ]
+  },
+  "author": "Alex White",
+  "license": "MIT",
+  "homepage": "https://github.com/devalexwhite/omarchy-hey-time-tracker"
+}
